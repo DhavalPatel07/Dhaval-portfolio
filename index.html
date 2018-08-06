@@ -75,10 +75,46 @@ Loader
 <!-- Slider  -->
 <section id="Products" class="products-images">
 	<div class="col">
-    	<div class="flex-item">1</div>
-        <div class="flex-item">2</div>
-        <div class="flex-item">3</div>
-        <div class="flex-item">4</div>
+    	<div class="flex-item">
+        	<div class="products-image">
+            </div>
+            <h4>Products 1</h4>
+        </div>
+        <div class="flex-item">
+        	<div class="products-image">
+            </div>
+            <h4>Products 1</h4>
+        </div>
+        <div class="flex-item">
+        	<div class="products-image">
+            </div>
+            <h4>Products 1</h4>
+        </div>
+        <div class="flex-item">
+        	<div class="products-image">
+            </div>
+            <h4>Products 1</h4>
+        </div>
+        <div class="flex-item">
+        	<div class="products-image">
+            </div>
+            <h4>Products 1</h4>
+        </div>
+        <div class="flex-item">
+        	<div class="products-image">
+            </div>
+            <h4>Products 1</h4>
+        </div>
+        <div class="flex-item">
+        	<div class="products-image">
+            </div>
+            <h4>Products 1</h4>
+        </div>
+        <div class="flex-item">
+        	<div class="products-image">
+            </div>
+            <h4>Products 1</h4>
+        </div>
     </div>
 </section>
 
@@ -90,8 +126,7 @@ Loader
     <div class="item"> <h4>3 Image</h4> </div>
 </div>
 
-<!-- Right Box Div -->
-</div>
+
 
 
 <hr>
@@ -105,111 +140,13 @@ Loader
     <div class="item"> <h4>Logo 6</h4> </div>
 </div>
 
-<!-- Three Box -->
-<hr>
-<div class="three-box">
-	<ul>
-    	<li>Box 1</li>
-        <li>Box 2</li>
-        <li>Box 3</li>
-    </ul>
+<section class="map">
+
+</section>
+
+
+<!-- Right Box Div -->
 </div>
-
-<hr>
-
-<div class="two-box">
-	<ul>
-    	<li>Box 11</li>
-        <li>Box 12</li>
-        <li>Box 13</li>
-        <li>Box 14</li>
-    </ul>
-</div>
-<hr>
-
-<!-- Equal Height -->
-<div class="flex-container">
-  <div>1</div>
-  <div>
-  	<p>The "align-items: flex-start;" aligns the flex items</p>
-    <p>The "align-items: flex-start;" aligns the flex items</p>
-  </div>
-  <div>3</div>  
-</div>
-<style>
-.flex-container {
-  display: flex;
-  align-items: flex-center;
-  background-color: DodgerBlue;
-}
-.flex-container > div {
-  background-color: #0000FF;
-  width: 33.33%;
-  margin: 10px;
-  text-align: center;
-  line-height: normal;
-  font-size: 30px;
-  padding: 10px;
-}
-</style>
-<!-- / Equal Height -->
-<hr>
-<style>
-*, body { -webkit-box-sizing: border-box; -moz-box-sizing: border-box;	box-sizing: border-box; }
-body {
-	padding: 0; margin: 0;
-}
-.owl-nav button span {
-	font-size: 40px;
-}
-#HeroSlider .item {
-	height: 50vh;
-	background:#666;
-}
-#Customer_logo .item {
-	height: 100px;
-	background:#999;
-}
-
-ul {
-	padding: 0;
-	margin: 0;
-	 -webkit-box-sizing: border-box; -moz-box-sizing: border-box;	box-sizing: border-box;
-}
-.two-box ul li {
-	background: #999;
-	margin: 1%;
-	padding: 10px;
-	list-style: none;
-}
-.three-box ul li {
-	-webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-	background: #999;
-	margin: 10px;
-	padding: 10px;
-	list-style: none;
-	
-}
-
-@media(min-width: 600px){
-	.two-box ul {
-		display: -webkit-flex;
-	    display: -ms-flex;
-    	display: flex;
-		flex-wrap: wrap;
-	}
-	.three-box ul {
-		display: -webkit-flex;
-	    display: -ms-flex;
-    	display: flex;
-		
-	}
-	.two-box ul li {  width: 48%; }
-}
-
-</style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
@@ -234,24 +171,7 @@ ul {
 
 <script>
 /* ~~~~~ Loader ~~~~~ */
-window.addEventListener('DOMContentLoaded', function () {
-			QueryLoader2(document.querySelector("body"), {
-				barColor: "",
-				backgroundColor: "",
-				percentage: false,
-				barHeight: 0,
-				minimumTime: 200,
-				fadeOutTime: 10,
-				onProgress: function (percentage, imagesLoaded, totalImages) {
-					$(".loader figure span").css("width", percentage + "%");
-				},
-				onComplete: function () {
-					 setTimeout(function () {
-						$(".loader").fadeOut();
-					}, 1000) 
-				}
-			});
-		});
+
 </script>
 </body>
 </html>

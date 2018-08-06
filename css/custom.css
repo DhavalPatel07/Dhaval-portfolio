@@ -370,8 +370,9 @@ h6 { font-size: 18px; line-height: 70px; }
 	overflow: hidden;
 	flex-direction: column;
 }
-
+#About { background: #fff; position:relative; z-index:500; }
 .about-section .left-ctn-section {
+	background: #ffffff;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	padding-left: 40px;
@@ -380,10 +381,19 @@ h6 { font-size: 18px; line-height: 70px; }
 .about-section h2 {
 	padding-bottom: 30px;
 }
+
+#Products {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
 .bg-img.parallax {
 	height: auto;
 }
 
 .products-images .flex-item {
 	width: 25%;
+}
+.products-image {
+	height: 400px;
+	background: #000;
 }
