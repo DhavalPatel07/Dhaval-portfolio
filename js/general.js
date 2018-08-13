@@ -45,6 +45,27 @@ $(document).ready(function() {
 	}
 	scrollNav();
 	
+	
+	
+	window.addEventListener('DOMContentLoaded', function () {
+	QueryLoader2(document.querySelector("body"), {
+		barColor: "",
+		backgroundColor: "",
+		percentage: false,
+		barHeight: 0,
+		minimumTime: 200,
+		fadeOutTime: 10,
+		onProgress: function (percentage, imagesLoaded, totalImages) {
+			$(".loader figure span").css("width", percentage + "%");
+		},
+		onComplete: function () {
+			 setTimeout(function () {
+				$(".loader").fadeOut();
+			}, 1000) 
+		}
+	});
+});
+	
 })
 
 
