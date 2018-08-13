@@ -377,6 +377,11 @@ h6 { font-size: 18px; line-height: 70px; }
 	padding-bottom: 60px;
 	padding-left: 40px;
 	padding-right: 14%;
+	    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+                  box-sizing: border-box;
 }
 .about-section h2 {
 	padding-bottom: 30px;
